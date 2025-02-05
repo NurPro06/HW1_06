@@ -3,6 +3,7 @@ package kg.geeks.hw1_06.ui.components
 import android.widget.Toast
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -18,7 +19,9 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import kg.geeks.hw1_06.R
-import java.lang.reflect.Modifier
+import androidx.compose.ui.Modifier
+import androidx.compose.foundation.layout.padding
+
 
 @Composable
 fun ProfileScreen(viewModel: ProfileViewModel = ProfileViewModel()) {
