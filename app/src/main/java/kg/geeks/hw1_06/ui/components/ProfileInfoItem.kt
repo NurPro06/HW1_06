@@ -12,17 +12,16 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.Modifier
-
 @Composable
 fun ProfileInfoItem(label: String, value: String, onClick: () -> Unit) {
     Column (
         modifier = Modifier
             .fillMaxWidth()
             .clickable { onClick() }
-            .padding(vertical = 8.dp),
+            .padding(vertical = 10.dp),
     ) {
-        Text(text = label, fontSize = 14.sp, color = Color.Gray)
-        Text(text = value, fontSize = 18.sp, fontWeight = FontWeight.Bold)
+        Text(text = label, fontSize = 15.sp, color = Color.Gray)
+        Text(text = value, fontSize = 20.sp, fontWeight = FontWeight.Bold)
         Divider(color = Color.LightGray, thickness = 1.dp)
     }
 }

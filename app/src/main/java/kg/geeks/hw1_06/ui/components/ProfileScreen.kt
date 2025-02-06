@@ -21,8 +21,6 @@ import androidx.compose.ui.unit.dp
 import kg.geeks.hw1_06.R
 import androidx.compose.ui.Modifier
 import androidx.compose.foundation.layout.padding
-
-
 @Composable
 fun ProfileScreen(viewModel: ProfileViewModel = ProfileViewModel()) {
     var showDialog by remember { mutableStateOf(false) }
